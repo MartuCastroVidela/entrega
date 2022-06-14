@@ -1,0 +1,166 @@
+header,
+body,
+section,
+footer {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #EBEEF3;
+}
+
+
+
+/*INDEX*/
+
+.gridIndex{
+  display: grid;
+  grid-template-columns: 375px 500px 375px ;
+  grid-template-rows: 200px 200px 330px 90px 150px;
+  grid-template-areas: 
+  "header header header"
+  "flyer flyer flyer"
+  "asside1 calendario asside2"
+  "slogan slogan slogan"
+  "footer footer footer";
+}
+
+
+header{
+    height: 200px;
+    grid-area: header;
+}
+.header__botonera ul {
+    margin: 0;
+    padding: 15px;
+    list-style-type: none;
+    text-align: center;
+  }
+  .header__botonera ul li {
+    display: inline-block;
+  }
+  .header__botonera ul li a {
+    text-align: center;
+    display: inline-block;
+    padding: 20px 20px;
+    color: #011B3C ;
+    text-decoration: none;
+    background-color: #BAC8D5;
+    letter-spacing: 3px;
+    height: 70px;
+    font-size: 22px;
+  }
+  .header__botonera ul li a:hover {
+    background-color: #02284C;
+    color: #BAC8D5;
+    text-align: center;
+  }
+  .header__titulo{
+      color:#02284C ;
+      font-size: 43px;
+      text-align: center;
+      margin: 10px;
+
+  }
+  .header__sub{
+      margin-top: 2px;
+    position: top;
+    color:#02284C;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+.calendar{
+  width: 500px;
+  text-align: center;
+  background-color:#7F99B4 ;
+  }
+  
+  .asside1{
+     width: 375px;
+     background-color: #BAC8D5;
+     grid-area: asside1;
+   }
+  
+  .asside2{
+    width: 375px;
+    background-color: #02284C ;
+    grid-area: asside2;
+  }
+  
+  .button{
+    margin: 10px;
+  }
+.slogan{
+  margin-top: 2px;
+  position: top;
+  color:#02284C;
+  font-size: 15px;
+  text-align: center;
+  grid-area: slogan;
+}
+/*   FIN INDEX   */
+
+
+.gridBariloche{
+  display: grid;
+  grid-template-columns: 420px 830px ;
+  grid-template-rows: 200px 200px 70px 230px 230px 150px;
+  grid-template-areas: 
+  "header header"
+  "flyer flyer"
+  "mapa sub_botonera"
+  "mapa asside"
+  "mapa asside"
+  "footer footer";
+}
+
+
+.flyer{
+  grid-area: flyer;
+}
+
+.footer{
+  grid-area: footer;
+}
+.mapa{
+  grid-area: mapa;
+  width: 600px;
+  margin: 5px;
+}
+.sub__botonera{
+  grid-area: sub_botonera;
+  width: 850px;
+}
+.assideBari{
+  grid-area: asside;
+  width: 800px;
+  height: 200px;
+  margin: 20px;
+  background-color: rgb(172, 172, 172);
+}
+.sub__botonera ul {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+}
+.sub__botonera ul li {
+  display: inline-block;
+}
+.sub__botonera ul li a {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 10px;
+  color: #BAC8D5 ;
+  text-decoration: none;
+  background-color: #02284C;
+  letter-spacing: 3px;
+  height: 45px;
+  font-size: 15px;
+}
+.sub__botonera ul li a:hover {
+  background-color: #BAC8D5;
+  color: #02284C;
+  text-align: center;
+}
